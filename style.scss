@@ -17,14 +17,10 @@ body {
 .flex {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -60,6 +56,34 @@ header {
   nav {
     .nav-links {
       font-family: "Times New Roman", Times, serif;
+    }
+  }
+}
+
+// Accordion
+main {
+  .accordion {
+    padding-top: 5em;
+    width: 70%;
+    margin: 0 auto;
+    .accordion-container {
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(41, 41, 41, 0.3);
+      cursor: pointer;
+      .accordion-title {
+        h2 {
+          font-size: 2.5rem;
+          padding-right: 1rem;
+        }
+      }
+      .accordion-content {
+        p {
+          font-size: 1.1rem;
+          line-height: 1.4;
+          padding-top: 1rem;
+        }
+      }
     }
   }
 }
