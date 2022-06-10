@@ -1,4 +1,4 @@
-<h1 align="center">Magasin du Nord - Accordion Example</h1>
+<h1 align="center">Magasin du Nord - AccordionCode Example</h1>
 
 <div align="center">
    Home Assignment
@@ -35,6 +35,8 @@ Desktop
 ![Desktop](https://user-images.githubusercontent.com/67963370/173121530-16942614-0e9a-4848-b9cd-384d6676f511.png)
 
 Mobile
+
+![Mobile](https://user-images.githubusercontent.com/67963370/173129315-104b0821-e4e7-440d-b7fc-2ba659391f26.png)
 
 
 ### Built With
