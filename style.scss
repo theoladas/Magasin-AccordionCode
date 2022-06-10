@@ -71,6 +71,15 @@ main {
       padding-bottom: 2rem;
       border-bottom: 1px solid rgba(41, 41, 41, 0.3);
       cursor: pointer;
+      // Toggle the active class / Hide-Show accordion-content
+      &.active {
+        .accordion-content {
+          overflow: hidden;
+          max-height: 0;
+          // Add transition when the content hides
+          transition: max-height 0.6s ease;
+        }
+      }
       .accordion-title {
         h2 {
           font-size: 2.5rem;
@@ -78,6 +87,7 @@ main {
         }
       }
       .accordion-content {
+        max-height: 300px;
         p {
           font-size: 1.1rem;
           line-height: 1.4;
