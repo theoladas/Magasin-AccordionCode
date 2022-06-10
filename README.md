@@ -32,6 +32,8 @@
 
 Desktop
 
+![Desktop](https://user-images.githubusercontent.com/67963370/173121530-16942614-0e9a-4848-b9cd-384d6676f511.png)
+
 Mobile
 
 
@@ -51,19 +53,19 @@ Mobile
 
 Provide an example of an accordionCode an accordion which have the ability to:
 
-Expand/collapse
-Default state of "expanded"
-Multiple expandable contents
-Animate between the collapsed and expanded state, and vice versa
-Visualise expanded/collapsed state with a svg chevron (provided)
-Using Web Components (eg. <awesome-accordion> custom defined html-element)
+- Expand/collapse
+- Default state of "expanded"
+- Multiple expandable contents
+- Animate between the collapsed and expanded state, and vice versa
+- Visualise expanded/collapsed state with a svg chevron (provided)
+- Using Web Components (eg. <awesome-accordion> custom defined html-element)
 
 Keywords:
 
-Control default state via classes or data-attributes.
-Should not animate into it's default state
-customElements.define('awesome-accordion', AwesomeAccordion);
-Use HTML, Sass and JS - You decide which layer controls the transitions
+- Control default state via classes or data-attributes.
+- Should not animate into it's default state
+- customElements.define('awesome-accordion', AwesomeAccordion);
+- Use HTML, Sass and JS - You decide which layer controls the transitions
 
 Deliver a working example with a collection of HTML, JS and compiled CSS.
 Tho it doesn't have to be pretty or pixel perfect.
