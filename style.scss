@@ -20,7 +20,6 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 a {
   text-decoration: none;
   cursor: pointer;
@@ -38,12 +37,9 @@ a {
   #logo {
     display: block;
     max-width: 100%;
-    object-fit: cover;
     margin: 0 auto;
-    padding-bottom: 0.5rem;
   }
 }
-
 li {
   list-style-type: none;
   padding: 0 0.5rem 1rem 0;
@@ -56,6 +52,22 @@ header {
   nav {
     .nav-links {
       font-family: "Times New Roman", Times, serif;
+    }
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 5px;
+      transition: all 0.3s ease-in;
+    }
+    .burger {
+      display: none;
+      cursor: pointer;
+      opacity: 1;
+      transition: all 0.3s ease-in;
+      &:hover {
+        opacity: 0.6;
+      }
     }
   }
 }
@@ -98,6 +110,84 @@ main {
           font-size: 1.1rem;
           line-height: 1.4;
           padding-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+    nav {
+      display: flex;
+      #logo {
+        width: 200px;
+        margin-right: auto;
+        display: block;
+        padding-bottom: 0rem;
+      }
+      .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 100%;
+        top: 0;
+        background-color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+        transform: translateX(100%);
+        li {
+          padding: 1rem;
+          a {
+            color: #292929;
+            opacity: 1;
+            transition: all 0.4s ease;
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+      .burger {
+        margin-left: auto;
+        padding-top: 1.5rem;
+        display: block;
+        z-index: 2;
+        cursor: pointer;
+
+        // Toggle Burger Navigation
+        &.toggle-burger-lines {
+          .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+          }
+          .line2 {
+            opacity: 0;
+          }
+          .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+          }
+        }
+      }
+      .nav-active {
+        transition: transform 0.4s ease-in;
+        transform: translateX(0%);
+        z-index: 2;
+      }
+    }
+  }
+  main {
+    .accordion {
+      .accordion-container {
+        .accordion-title {
+          h2 {
+            font-size: 2rem;
+            @media (max-width: 335px) {
+              font-size: 1.5rem;
+            }
+          }
         }
       }
     }
