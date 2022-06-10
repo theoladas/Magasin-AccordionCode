@@ -6,12 +6,8 @@
 
 <div align="center">
   <h3>
-    <a href="https://theoladas.github.io/racing-post-jockey/">
+    <a href="https://theoladas.github.io/Magasin-AccordionCode">
       Live
-    </a>
-   <span> | </span>
-       <a href="https://github.com/theoladas/racing-post-jockey">
-      Repo
     </a>
   </h3>
 </div>
