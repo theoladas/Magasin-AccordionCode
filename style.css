@@ -6,6 +6,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: #292929;
+  background-color: #fff;
 }
 
 .container {
@@ -17,5 +19,41 @@ body {
 .flex {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #292929;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+a:hover {
+  opacity: 0.6;
+}
+
+.logo-link:hover {
+  opacity: 1;
+}
+.logo-link #logo {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+}
+
+li {
+  list-style-type: none;
+  padding: 0 0.5rem 1rem 0;
+}
+
+header {
+  min-height: 10vh;
+  border-bottom: 1px solid rgba(41, 41, 41, 0.2);
+}
+header nav .nav-links {
+  font-family: "Times New Roman", Times, serif;
 }/*# sourceMappingURL=style.css.map */
